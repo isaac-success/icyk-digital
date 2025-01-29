@@ -1,0 +1,108 @@
+nav div ul {
+  list-style-type: none;
+  
+}
+nav div ul li{
+  margin-right: 1rem;
+  display: inline-block;
+}
+nav div a{
+  text-decoration: none;
+  color: inherit;
+}
+nav div ul a:hover{
+  border-bottom: 4px solid var(--dark-blue);
+}
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 64px 3.46875rem;
+}
+header img{
+  margin-left: 132px;
+  width: 633px;
+  border-radius: 20px;
+}
+.heading-left{
+  width: 564px;
+}
+h1{
+  margin-bottom: 8px;
+}
+.heading-left button{
+  margin-top: 22px;
+}
+main section{
+  padding: 64px 3.46875rem;
+}
+#advantage{ 
+  text-align: center  ;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 546px 1fr;
+  gap: 100px;
+  align-items: center;
+}
+#advantage img{
+  width: 100%
+}
+#advantage h2{
+  margin-bottom: 32px;
+  
+}section h2{
+  color: var(--medium-blue);
+}
+#why-a-website h2{
+  margin-bottom: 32px;
+}
+#why-a-website-items{
+  display: grid;
+  grid-template-columns: 532px 683px;
+  gap: 109px;
+}
+#why-a-website-items-icons-container{
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 240px) 139px;
+}
+#why-a-website-items-icons-container img{
+  height: 109px;
+}
+
+
+@media screen and (max-width: 767px){
+  header img{
+    display: none;
+  }
+  .heading-text{width: 100%;}
+  button{
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  header, main section
+  {
+    padding: 64px 0.66875rem;
+    }
+    #advantage{
+      width: 100%;
+     gap: 50px;
+      grid-template-columns: repeat(1, 100%);
+    }#advantage img{
+      order: 2;
+    }
+    #advantage-text{
+      order: 1;
+    }
+    #why-a-website-items{
+      grid-template-columns: 100%;
+       gap: 50px;
+     }
+     #why-a-website-items-icons-container{
+      grid-template-columns: repeat(2, 120px) 69.5px;
+      align-items: center;
+      text-align: center;
+      }
+  }
