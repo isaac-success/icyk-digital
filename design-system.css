@@ -3,67 +3,214 @@
   --medium-blue: #80a4ed;
   --light-blue: #bcd3f2;
 }
+@font-face {
+  font-family: Oikawy;
+  src: url("/font/oikawy-trial.regular.ttf");
+}
 
 * {
   margin: 0;
   padding: 0;
- 
-    box-sizing: border-box  ;
+
+  box-sizing: border-box;
 }
-body{
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-    line-height: 0.95;
- 
+  line-height: 0.95;
 }
 
 h2 {
   font-size: 2.25rem;
   font-weight: 600;
 }
-h3{
-  font-size: 2rem;
+
+h3 {
+  font-size: 1.5rem /*2rem */;
   font-weight: 500;
 }
-p{
-  font-size: 1.5rem;
+
+p {
+  font-size: 1.3rem /*1.5rem*/;
 }
- button{
-    border-radius: 1.25rem;
-    padding: 18px 24px;
-    font-weight: 600;
-    font-size: 1.5rem;
-  cursor: pointer; 
+
+button {
+  border-radius: 1rem;
+  padding: 9px 12px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
   border: none;
   transition: opacity ease-in-out 0.2s;
-} 
-button:hover{
+}
+
+button:hover {
   transform: scale(0.99);
   opacity: 0.9;
 }
-.primary-btn{
+
+.primary-btn {
   color: white;
   background-color: var(--dark-blue);
 }
-.secondary-btn{
+
+.secondary-btn {
   background-color: var(--light-blue);
   color: var(--dark-blue);
 }
-nav{
+
+nav {
   width: 100%;
 }
-.navbar-brand{
-  font-family:roboto;
-  font-weight: 900;
-  font-size: 2.2rem;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+#nav-logos img {
+  width: 5em;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0 152px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul a:not(:last-child) {
+  margin-right: 1rem;
+}
+nav a {
   color: var(--dark-blue);
 }
-.nav-btn{
-  margin-left: auto;
-  margin-top: 0.5rem;
+.hamburger-btn img {
+  width: 3em;
+}
+.hamburger-btn {
+  padding: 0;
+  background-color: transparent;
+  display: none;
+}
+#nav-logos a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+#nav-logos p {
+  font-family: Oikawy, Roboto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-align: center;
+}
+#nav-logos span {
+  letter-spacing: 0.3rem;
+}
+.nav-items a:hover {
+  border-bottom: 0.2rem solid var(--dark-blue);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#Quick-links a {
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  gap: 10px;
+  padding: 32px 3.46875rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer h3 {
+  margin-bottom: 2rem;
+}
+
+footer li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+#Social-icons {
+  margin-top: 1rem;
+}
+
+#Social-icons img {
+  width: 2em;
+}
+
+#Social-icons a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#copyright p {
+  font-size: 0.7em;
+  color: var(--dark-blue);
+  text-align: center;
+  background-color: hsl(214, 67%, 88%);
+  padding: 0.5rem 3.46875rem;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  footer div {
+    width: 100%;
+  }
+  #nav-button,
+  .nav-items {
+    display: none;
+  }
+  .hamburger-btn {
+    display: inline-block;
+  }
+  .nav-phone {
+    display: block; /* Make it visible when toggled */
+    position: absolute;
+    top: 98px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+  }
+  .nav-phone a {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  nav ul {
+    margin: 0 auto;
+  }
 }
