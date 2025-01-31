@@ -1,21 +1,3 @@
-nav div ul {
-  list-style-type: none;
-}
-
-nav div ul li {
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-nav div a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav div ul a:hover {
-  border-bottom: 4px solid var(--dark-blue);
-}
-
 header {
   width: 100%;
   display: flex;
@@ -24,7 +6,6 @@ header {
   padding: 32px 3.46875rem;
   gap: 132px;
 }
-header,
 main section {
   padding: 16px 1.96875rem;
 }
@@ -34,7 +15,6 @@ header img {
   width: 50%;
   border-radius: 20px;
 }
-
 .heading-left {
   width: 50%;
 }
@@ -162,100 +142,98 @@ iframe {
   /* background-color:var(--light-blue) ; */
 }
 
-@media screen and (max-width: 767px) {
-  @media screen and (min-width: 768px) and (max-width: 967px) {
-    header {
-      flex-direction: column-reverse;
-      gap: 1.2rem;
-    }
-
-    header img {
-      width: 80%;
-    }
-
-    .heading-left {
-      width: 100%;
-    }
-
-    #why-a-website-items {
-      grid-template-columns: 1fr;
-      gap: 54.5px;
-    }
+@media screen and (min-width: 768px) and (max-width: 967px) {
+  header {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
   }
 
-  @media screen and (max-width: 767px) {
-    .heading-left {
-      width: 100%;
-    }
+  header img {
+    width: 80%;
+  }
 
-    header img {
-      display: none;
-    }
+  .heading-left {
+    width: 100%;
+  }
 
-    .heading-text {
-      width: 100%;
-    }
+  #why-a-website-items {
+    grid-template-columns: 1fr;
+    gap: 54.5px;
+  }
+}
 
-    button {
-      padding: 15px 20px;
-      font-weight: 600;
-      font-size: 1rem;
-    }
+@media screen and (max-width: 767px) {
+  .heading-left {
+    width: 100%;
+  }
 
-    main section {
-      padding: 32px 0.66875rem;
-    }
-    header {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
+  header img {
+    display: none;
+  }
 
-    #advantage {
-      width: 100%;
-      gap: 50px;
-      grid-template-columns: repeat(1, 100%);
-    }
+  .heading-text {
+    width: 100%;
+  }
 
-    #advantage img {
-      order: 2;
-    }
+  button {
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
 
-    #advantage-text {
-      order: 1;
-    }
+  main section {
+    padding: 32px 0.66875rem;
+  }
+  header {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 
-    #why-a-website-items {
-      grid-template-columns: 100%;
-      gap: 50px;
-    }
+  #advantage {
+    width: 100%;
+    gap: 50px;
+    grid-template-columns: repeat(1, 100%);
+  }
 
-    #why-a-website-items-icons-container {
-      grid-template-columns: repeat(2, 120px) 69.5px;
-      align-items: center;
-      text-align: center;
-    }
+  #advantage img {
+    order: 2;
+  }
 
-    #why-a-website-items-icons-container {
-      grid-template-columns: repeat(1, 2fr);
-      gap: 2rem;
-    }
+  #advantage-text {
+    order: 1;
+  }
 
-    #why-a-website-items-icons-container div:not(:last-child) {
-      margin-right: 0px;
-    }
+  #why-a-website-items {
+    grid-template-columns: 100%;
+    gap: 50px;
+  }
 
-    #Review-container p {
-      text-align: center;
-    }
+  #why-a-website-items-icons-container {
+    grid-template-columns: repeat(2, 120px) 69.5px;
+    align-items: center;
+    text-align: center;
+  }
 
-    #Review-container {
-      width: 90%;
-    }
+  #why-a-website-items-icons-container {
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
+  }
 
-    iframe {
-      width: 80%;
+  #why-a-website-items-icons-container div:not(:last-child) {
+    margin-right: 0px;
+  }
 
-      height: 1010px;
-    }
+  #Review-container p {
+    text-align: center;
+  }
+
+  #Review-container {
+    width: 90%;
+  }
+
+  iframe {
+    width: 80%;
+
+    height: 1010px;
   }
 }

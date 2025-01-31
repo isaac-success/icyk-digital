@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  color: var(--dark-blue);
+  height: 50vh;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  background-image:url("/images/a-propos-de-nous.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+}
+header p {
+  margin-top: 10px;
+}
+header div {
+display: block;
+width: 100%;
+margin :0 auto ;
+position: absolute;
+left: 0;
+bottom: 50%;
+}
+header a {
+  color: inherit;
+}
+
+@media screen and (min-width: 767px) {
+}

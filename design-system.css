@@ -11,7 +11,6 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
@@ -45,7 +44,7 @@ p {
 }
 
 button {
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   padding: 9px 12px;
   font-weight: 500;
   font-size: 1.3rem;
@@ -123,6 +122,9 @@ nav a {
 .nav-items a:hover {
   border-bottom: 0.2rem solid var(--dark-blue);
 }
+header {
+  padding: 16px 1.96875rem;
+}
 
 footer a {
   color: inherit;
@@ -175,19 +177,7 @@ footer li:not(:last-child) {
   background-color: hsl(214, 67%, 88%);
   padding: 0.5rem 3.46875rem;
 }
-
-@media screen and (max-width: 767px) {
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  footer div {
-    width: 100%;
-  }
+@media screen and (max-width: 1104px) {
   #nav-button,
   .nav-items {
     display: none;
@@ -196,7 +186,7 @@ footer li:not(:last-child) {
     display: inline-block;
   }
   .nav-phone {
-    display: block; /* Make it visible when toggled */
+    display: block;
     position: absolute;
     top: 98px;
     left: 0;
@@ -212,5 +202,22 @@ footer li:not(:last-child) {
   }
   nav ul {
     margin: 0 auto;
+  }
+  nav ul a:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  footer div {
+    width: 100%;
   }
 }
