@@ -4,27 +4,114 @@ header {
   height: 50vh;
   text-align: center;
   position: relative;
-  background-color: #fff;
-  background-image:url("/images/a-propos-de-nous.jpg");
+  background-color: rgba(188, 211, 242, 0.4);
+  background-blend-mode: lighten;
+  background-image: url("/images/a-propos-de-nous.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center;
 }
 header p {
   margin-top: 10px;
 }
 header div {
-display: block;
-width: 100%;
-margin :0 auto ;
-position: absolute;
-left: 0;
-bottom: 50%;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
 }
 header a {
   color: inherit;
 }
+h2 {
+  color: var(--medium-blue);
+}
+#notre-histoire-container {
+  padding: var(--mobile-padding);
+}
+#notre-histoire-container h2 {
+  margin-bottom: 32px;
+}
+#notre-histoire-container img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+#Services{
+  padding: var(--mobile-padding);
+  text-align: center;
+}
+#Services h2{
+  margin-bottom: 32px;
+}
+#services-items{
+ display: grid;
+ gap: 105.2px;
+ grid-template-columns: 1fr;
+ justify-content: center;
+ align-items: center;
+}
+#services-item-container-1 img, #services-item-container-2 img{
+  margin: 0 auto 32px;
+}
+#services-1-text h3, #services-2-text h3{
+  margin-bottom: 20px;
+}
+#services-1-text p, #services-2-text p{
+  margin-bottom: 20px;
+}
+
+
+
+
+
 
 @media screen and (min-width: 767px) {
+  #notre-histoire-container {
+    padding: var(--default-padding);
+    display: grid;
+    grid-template-columns: 0.3fr 1.5fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+  }
+  #notre-histoire-container img {
+    margin-top: 0;
+  }
+  #notre-histoire-main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  #Services{
+    padding: var(--default-padding);
+  }
+  #services-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 205px;
+  }
+  #services-item-container-1 img, #services-item-container-2 img{
+    margin: 0 auto 32px;
+  }
+  #services-1-text h3, #services-2-text h3{
+    margin-bottom: 20px;
+  }
+  #services-1-text p, #services-2-text p{
+    margin-bottom: 20px;
+  }
+  #services-item-container-1, #services-item-container-2{
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 70px 1fr;
+    background-color: var(--light-blue);
+    padding: 32px 16px;
+    border-radius: 1rem;
+    text-align: left;
+    gap: 20px;
+  }
 }
