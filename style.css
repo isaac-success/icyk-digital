@@ -1,90 +1,90 @@
 header {
   width: 100%;
+  height: 70vh;
+  padding: 32px 1.46875rem;
+  text-align: center;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 32px 3.46875rem;
-  gap: 132px;
+  background-color: rgba(225, 225, 225, 0.7);
+  background-image: url(images/medium-shot-man-working-desk.jpg);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 main section {
-  padding: 16px 1.96875rem;
-}
-
-header img {
-  /* margin-left: 132px; */
-  width: 50%;
-  border-radius: 20px;
-}
-.heading-left {
-  width: 50%;
+  padding: 3rem 1.96875rem;
 }
 
 h1 {
   margin-bottom: 8px;
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
 .heading-left button {
   margin-top: 22px;
 }
 
-#advantage {
+#advantage, #expertise {
   text-align: center;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
   align-items: center;
+  margin-top: 1rem;
 }
 
-#advantage img {
+#expertise{
+  grid-template-columns: 1fr 1fr;;
+}
+
+#advantage img, #expertise img {
   width: 100%;
+  border-radius: 0.25rem;
 }
 
-#advantage h2 {
+#advantage h2, #expertise h2 {
   margin-bottom: 32px;
 }
-
-section h2 {
-  color: var(--medium-blue);
+#site-en-3-clics h2{
+margin-bottom: 1rem;
 }
-
-#why-a-website {
-  width: 100%;
-}
-
-#why-a-website h2 {
-  margin-bottom: 32px;
-}
-
-#why-a-website-items {
+#site-en-3-clics-card-container{
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: 532px 1fr;
-  gap: 109px;
-}
-
-#why-a-website-items-icons-container {
-  display: grid;
-  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-}
-
-#why-a-website-items-icons-container img {
-  width: 80px;
-  margin-bottom: 12px;
-}
-
-#why-a-website-items-icons-container div {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 70px;
+}#site-en-3-clics-card-container img{
+  float: left;
+  margin-top: -0.3rem;
+  margin-right: 0.5rem;
+  width:2.5em;
+}#site-en-3-clics-card-container p{
+  clear: both;
+  margin-top: 2rem;
   text-align: center;
-  align-items: center;
+}#site-en-3-clics-card-container div{
+  padding: 1rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 1rem;
+}
+#site-en-3-clics-card-container div:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+section h2 {
+  color: var(--dark-blue);
 }
 
-#why-a-website-items-icons-container div:not(:last-child) {
-  margin-right: 2rem;
-}
+
+
+
+
 
 #Latest-works-grid {
   display: flex;
@@ -142,86 +142,64 @@ iframe {
   /* background-color:var(--light-blue) ; */
 }
 
-@media screen and (min-width: 768px) and (max-width: 967px) {
-  header {
-    flex-direction: column-reverse;
-    gap: 1.2rem;
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
 
-  header img {
-    width: 80%;
+  h1{
+    
+    font-size: 3rem;
   }
-
-  .heading-left {
-    width: 100%;
+  .heading-left p{
+    
+    font-size: 1.3rem;
   }
-
-  #why-a-website-items {
-    grid-template-columns: 1fr;
-    gap: 54.5px;
+  .heading-left{
+    width: 932px;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 967px) {
+
+
+}
+
 @media screen and (max-width: 767px) {
-  .heading-left {
-    width: 100%;
-  }
+header{
+  height: 60vh;
+}
 
-  header img {
-    display: none;
-  }
-
-  .heading-text {
-    width: 100%;
-  }
 
   button {
-    padding: 15px 20px;
     font-weight: 600;
     font-size: 1rem;
   }
 
   main section {
-    padding: 32px 0.66875rem;
+    padding: 60px 0.66875rem;
   }
   header {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  #advantage {
+  #advantage, #expertise {
     width: 100%;
     gap: 50px;
     grid-template-columns: repeat(1, 100%);
   }
 
-  #advantage img {
+  #advantage img, #expertise img {
     order: 2;
   }
 
-  #advantage-text {
+  #advantage-text, #expertise-text {
     order: 1;
   }
 
-  #why-a-website-items {
-    grid-template-columns: 100%;
-    gap: 50px;
-  }
 
-  #why-a-website-items-icons-container {
-    grid-template-columns: repeat(2, 120px) 69.5px;
-    align-items: center;
-    text-align: center;
-  }
-
-  #why-a-website-items-icons-container {
-    grid-template-columns: repeat(1, 2fr);
-    gap: 2rem;
-  }
-
-  #why-a-website-items-icons-container div:not(:last-child) {
-    margin-right: 0px;
-  }
 
   #Review-container p {
     text-align: center;
@@ -236,4 +214,19 @@ iframe {
 
     height: 1010px;
   }
+  .container {
+    box-shadow: 0 2px 15px 0px rgba(0, 0, 0, 0.8);
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  #site-en-3-clics-card-container{
+    grid-template-columns: 1fr;
+    }
+    #site-en-3-clics-card-container h3{
+      text-align: center;
+    }
+    #site-en-3-clics-card-container div
+{
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
 }
